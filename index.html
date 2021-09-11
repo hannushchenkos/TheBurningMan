@@ -16,19 +16,32 @@
 		<header class="header">
 			<div class="container header__container">
 				<div class="nav">
-
 					<img class="logo" src="img/logo.svg" alt="Burning Man">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto=".header__container" href="#" class="menu__link">Home</a></li>
+							<li class="menu__item"><a data-goto=".about__container" href="#" class="menu__link">About</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li class="sub-list__item"><a href="#">Rebuilding the society</a></li>
+									<li class="sub-list__item"><a href="#">This drives us</a></li>
+								</ul>
+							</li>
 
-					<ul class="menu">
-						<li class="menu__item"><a href="#" class="header__link">Home</a></li>
-						<li class="menu__item"><a href="#" class="header__link">About</a></li>
-						<li class="menu__item"><a href="#" class="header__link">Tickets</a></li>
-						<li class="menu__item"><a href="#" class="header__link">Contacts</a></li>
-					</ul>
+							<li class="menu__item"><a data-goto=".about__images" href="#" class="menu__link">Photos</a></li>
+							<li class="menu__item"><a data-goto=".footer_container" href="#" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+
+					</nav>
+					<a href="tel:+18938392364" class="phone">+1 893 839-23-64</a>
+					<div class="menu__burger">
+						<span></span>
+					</div>
+
 				</div>
-				<a href="tel:+18938392364" class="phone">+1 893 839-23-64</a>
 			</div>
-			<div class="offer container">
+			<div class="offer__container container">
 				<p class="offer__descr">Not tne event. The life</p>
 				<h1 class="offer__title">Burning MAN</h1>
 				<a link="#" class="offer__button">Book the tickets</a>
@@ -60,6 +73,7 @@
 				</div>
 			</div>
 			<div class="about__images">
+				<h2 class="about__subtitle">Photos</h2>
 				<div class="gallery">
 					<img class="about__image" src="/img/img1.jpg" alt="df">
 					<img class="about__image" src="/img/img2.jpg" alt="df">
@@ -79,6 +93,9 @@
 
 
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/js/main.js"></script>
 </body>
 
 </html>
